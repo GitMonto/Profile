@@ -3,42 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <!-- TODO: Add favicon. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./src/style.css" />
     <title>Markos Profile</title>
   </head>
-  <body class="bg-black font-semibold text-white">
-    <header class="py-5">
+  <body class="container m-auto border-x-4 bg-black font-semibold text-white">
+    <header class="sticky py-5 px-5">
       <div class="flex items-center justify-between px-5">
-        <div>Marko Milovic</div>
+        <div class="text-2xl">Marko Milovic</div>
         <div class="hidden items-center space-x-12 sm:flex">
           <a
             href="https://www.linkedin.com/in/marko-milovic-5ab71220b/"
-            class="text-blue-800"
+            target="_blank"
+            class="text-blue-800 hover:scale-105"
           >
             LinkedIn</a
           >
-          <a href="https://github.com/GitMonto" class="text-green-800">
+          <a
+            href="https://github.com/GitMonto"
+            target="_blank"
+            class="text-green-800 hover:scale-105"
+          >
             GitHub</a
           >
-          <a href="https://www.youtube.com/watch?v=eVFd46qABi0"
-            ><button class="bg-blue-600 px-6 py-2 font-bold">
+          <a href="https://www.youtube.com/watch?v=eVFd46qABi0" target="_blank"
+            ><button
+              class="bg-blue-600 px-6 py-2 font-bold transition hover:scale-105 hover:bg-blue-500"
+            >
               Click Me!
             </button></a
-      >
-        Marko Milovic AKA Monto
-      </h1>
-    </div>
+          >
+        </div>
       </div>
+      <section class="flex">
+        <img
+          src="Images/ProfilePic.jpg"
+          alt="Profile Pic"
+          class="max-h-xs ml-20 mt-10 max-w-xs rounded-full object-cover"
+        />
+        <p class="py-24 px-20 text-3xl">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          quibusdam iure veniam corrupti odio, fugiat consequatur. Unde earum,
+          qui officiis delectus magnam cum doloribus, voluptatum sint veniam
+          ducimus odit eaque." -J.K. Rowling
+        </p>
+      </section>
     </header>
-    <div>
-      <h1 class="py-36 px-20">
-        "Some mad insirational quote that needs to be longer so this can look
-        better words words words"
-      </h1>
-    </div>
-    <div></div>
+    <section class="my-20 flex flex-col font-mono">
+      <div class="mx-20 rounded-lg border-4 border-blue-400 p-5">
+        <ul class="px-10">
+          <li class="font-serif text-2xl font-semibold">Favorite Food</li>
+          <div class="list-disc">
+            <li class="ml-5">Burek</li>
+            <li class="ml-5">Lasagne</li>
+            <li class="ml-5">Pizza</li>
+            <li class="ml-5">Pasta</li>
+            <li class="ml-5">Risotto</li>
+          </div>
+        </ul>
+      </div>
+      <div class="my-10 mx-20 rounded-lg border-4 border-green-400 p-5">
+        <ul class="px-10">
+          <li class="font-serif text-2xl font-semibold">Hobbies</li>
+          <div class="list-disc">
+            <li class="ml-5">Stretching</li>
+            <li class="ml-5">Marinating Steak</li>
+            <li class="ml-5">Origami</li>
+            <li class="ml-5">Kick Boxing</li>
+            <li class="ml-5">Inventing</li>
+            <li class="ml-5">Night Walks</li>
+            <li class="ml-5">Gaming</li>
+          </div>
+        </ul>
+      </div>
+    </section>
     <script type="module" src="./src/index.js"></script>
   </body>
 </html>
