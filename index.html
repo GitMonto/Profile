@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="./src/style.css" />
     <title>Markos Profile</title>
   </head>
-  <body class="container m-auto border-x-4 bg-black font-semibold text-white">
+
+  <body
+    class="container m-auto justify-between bg-black pb-12 font-semibold text-white"
+  >
     <header class="sticky py-5 px-5">
       <div class="flex items-center justify-between px-5">
         <div class="text-2xl">Marko Milovic</div>
@@ -35,20 +38,113 @@
           >
         </div>
       </div>
-      <section class="flex">
+    </header>
+
+    <div class="container mx-auto mt-16 flex items-center justify-between px-8">
+      <div class="flex flex-wrap md:flex-nowrap">
+        <nav class="fixed hidden sm:block">
+          <div class="absolute mt-36 space-y-6">
+            <a
+              href="#"
+              class="nav-dot selected-circle block h-6 w-6 rounded-full border-4"
+            >
+              <span
+                class="nav-dot ml-10 rounded-md bg-black px-2 py-1 opacity-0"
+                >Home</span
+              >
+            </a>
+            <a
+              href="#work"
+              class="nav-dot bg-body block h-6 w-6 rounded-full border-4"
+            >
+              <span class="ml-10 rounded-md bg-black px-2 py-1 opacity-0"
+                >Work</span
+              >
+            </a>
+            <a
+              href="#aboutme"
+              class="nav-dot bg-body block h-6 w-6 rounded-full border-4"
+            >
+              <span class="ml-10 rounded-md bg-black px-2 py-1 opacity-0"
+                >About</span
+              >
+            </a>
+            <a
+              href="#contact"
+              class="nav-dot bg-body block h-6 w-6 rounded-full border-4"
+            >
+              <span class="ml-10 rounded-md bg-black px-2 py-1 opacity-0"
+                >Contact</span
+              >
+            </a>
+          </div>
+        </nav>
+
+        <div
+          class="mt-0 flex max-w-xl flex-wrap justify-center md:my-36 md:justify-start lg:ml-20"
+        >
+          <h1
+            class="text-center text-5xl font-bold md:text-left md:text-6xl lg:text-7xl"
+          >
+            Where there's a problem, <br />
+            there's a solution.
+          </h1>
+          <div class="mt-5 flex w-full justify-center md:justify-start">
+            <a
+              href="https://www.youtube.com/watch?v=eVFd46qABi0"
+              target="_blank"
+              ><button
+                class="bg-blue-600 px-4 py-2 font-bold transition hover:scale-105 hover:bg-blue-500"
+              >
+                Kom Limited
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container mx-auto mt-64 flex w-full items-center justify-between px-8 text-white md:px-14 lg:px-24"
+    >
+      <section>
+        <h2 id="work" class="secondary-title">My Work</h2>
+
+        <section class="section w-full align-middle">
+          <div class="flex">
+            <p class="my-auto items-center">
+              Rubik Talent, Software Tester (in Trainng)
+            </p>
+            <img
+              src="./Images/logo-cutout.png"
+              class="my-6 ml-5 resize items-center"
+              alt="Rubik"
+            />
+          </div>
+        </section>
+      </section>
+    </div>
+
+    <div
+      class="container mx-auto mt-64 flex w-full items-center justify-between px-8 text-white md:px-14 lg:px-24"
+    >
+      <section class="w-full">
+        <h2 id="aboutme" class="secondary-title">About Me</h2>
         <img
           src="Images/ProfilePic.jpg"
           alt="Profile Pic"
-          class="max-h-xs ml-20 mt-10 max-w-xs rounded-full object-cover"
+          class="ml-20 mt-10 h-fit max-w-xs rounded-full"
         />
-        <p class="py-24 px-20 text-3xl">
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          quibusdam iure veniam corrupti odio, fugiat consequatur. Unde earum,
-          qui officiis delectus magnam cum doloribus, voluptatum sint veniam
-          ducimus odit eaque." -J.K. Rowling
-        </p>
+        <section class="flex">
+          <p class="py-24 px-20 text-3xl">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            quibusdam iure veniam corrupti odio, fugiat consequatur. Unde earum,
+            qui officiis delectus magnam cum doloribus, voluptatum sint veniam
+            ducimus odit eaque." -J.K. Rowling
+          </p>
+        </section>
       </section>
-    </header>
+    </div>
+    <!--
     <section class="my-20 flex flex-col font-mono">
       <div class="mx-20 rounded-lg border-4 border-blue-400 p-5">
         <ul class="px-10">
@@ -76,7 +172,56 @@
           </div>
         </ul>
       </div>
-    </section>
+    </section> -->
+    <form
+      class="container mx-auto mt-64 flex w-full items-center justify-between px-8 md:px-14 lg:px-24"
+    >
+      <section class="w-full">
+        <h2 id="contact" class="secondary-title">Contact Me</h2>
+
+        <div
+          class="mt-24 grid w-full gap-8 text-black lg:grid-cols-2 lg:gap-32"
+        >
+          <div class="space-y-12">
+            <div>
+              <label class="mb-6 block text-xl font-bold text-white"
+                >Name</label
+              >
+              <input class="w-full border border-blue-300 px-4 py-4" />
+            </div>
+            <div>
+              <label class="mb-6 block text-xl font-bold text-white"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="w-full border border-blue-300 px-4 py-4"
+              />
+            </div>
+            <div>
+              <label class="mb-6 block text-xl font-bold text-white"
+                >Message</label
+              >
+              <input
+                type="email"
+                class="bg-input h-56 w-full border border-blue-300 px-4 py-4"
+              />
+            </div>
+            <button class="bg-theme bg-blue-600 px-6 py-2 font-bold text-white">
+              Send it!
+            </button>
+          </div>
+
+          <div class="mt-12 text-white">
+            <!-- Contact info -->
+            <p class="text-secondary">+44 787 6132 152</p>
+            <a href="My email" class="text-secondary mt-3 block underline"
+              >mmilovic21@gmail.com</a
+            >
+          </div>
+        </div>
+      </section>
+    </form>
     <script type="module" src="./src/index.js"></script>
   </body>
 </html>

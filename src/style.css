@@ -9,3 +9,26 @@ div.sticky {
   background-color: #cae8ca;
   border: 2px solid #4caf50;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.secondary-title {
+  @apply mt-10 mb-20 pt-6 pl-16 text-3xl font-bold;
+}
+
+.section {
+  @apply rounded border border-gray-600 px-4 py-2 text-sm text-white;
+}
+
+.selected-circle {
+  @apply border-red-600 bg-yellow-500;
+}
+.nav-dot:hover span {
+  opacity: 1;
+}
+.resize {
+  width: 400px;
+  height: auto;
+}
